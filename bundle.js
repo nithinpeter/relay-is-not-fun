@@ -54,13 +54,13 @@
 
 	var _reactDom2 = _interopRequireDefault(_reactDom);
 
-	var _app = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./app/app\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var _bootstrap = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./app/bootstrap\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
 
-	var _app2 = _interopRequireDefault(_app);
+	var _bootstrap2 = _interopRequireDefault(_bootstrap);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	_reactDom2.default.render(_react2.default.createElement(_app2.default, null), document.body);
+	_reactDom2.default.render(_bootstrap2.default, document.body);
 
 /***/ },
 /* 1 */

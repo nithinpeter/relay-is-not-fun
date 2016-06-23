@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './app/app'
+import RootContainer from './app/bootstrap'
 
 
-ReactDOM.render(<App />, document.body)
+ReactDOM.render(RootContainer, document.body)
