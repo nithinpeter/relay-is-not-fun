@@ -1,7 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-var babelRelayPlugin = require('./babelRelayPlugin');
+// var babelRelayPlugin = require('./babelRelayPlugin');
 // var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const Config = {
@@ -25,7 +25,7 @@ const Config = {
                 loader: 'babel-loader',
                 query: {
                     presets: ['es2015', 'react'],
-                    plugins: [babelRelayPlugin],
+                    // plugins: [babelRelayPlugin],
                 }
             }
         ]
