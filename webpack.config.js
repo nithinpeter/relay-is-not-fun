@@ -1,6 +1,7 @@
 var path = require('path');
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var babelRelayPlugin = require('./babelRelayPlugin');
 // var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const Config = {
@@ -23,13 +24,15 @@ const Config = {
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 query: {
-                    presets: ['es2015', 'react']
+                    presets: ['es2015', 'react'],
+                    plugins: [babelRelayPlugin],
                 }
             }
         ]
     },
     plugins: [
         new HtmlWebpackPlugin(),
+        // babelRelayPlugin,
         // new CopyWebpackPlugin([
         //     {from: __dirname + '/images', to: __dirname + '/build/images'}
         // ])
